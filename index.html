@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Oh the Places You'll Code</h1>
+					<p>
+						<small>Created by <a href="http://twitter.com/jimmyjacobson">Jimmy Jacobson</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h1>My First Computer</h1>
+					<h2>Macintosh 512k</h2>
+					<p><img src="img/mac.jpg" class="stretch"/>
+				</section>
+				<section>
+					<h1>My First Code</h1>
+					<h2>BASIC</h2>
+					<pre>
+							<code>
+10 PRINT "Hello World!"
+20 GOTO 10
+							</code>
+					</pre>
+				</section>
+				<section>
+					<h1>My First Program</h1>
+					<h2>Choose Your Own Adventure</h2>
+					<img src="img/choose.jpg"/>
+				</section>
+
+				<section>
+					<h1>Important Rules</h1>
+				</section>
+
+				<section>
+					<h2>Never be afraid to say "I don't understand".</h2>
+				</section>
+
+				<section>
+					<h2>Never make fun of someone for not understanding.</h2>
+				</section>
+
+				<section>
+					<h2>Always be willing to share what you have learned and coded.</h2>
+				</section>
+
+				<section>
+					<h2>Unless it's homework or a test.</h2>
+				</section>
+
+				<section>
+					<h1>Fun with Javascript</h1>
+				</section>
+
+				<section data-background="#007777">
+					<h1>JQuery</h1>
+					<p>Manipulate HTML on your Webpage</p>
+					<button>Click</button>
+					<br><br>
+					<center>
+						<div id="div1" style="width:80px;height:80px;background-color:red;"></div>
+						<br>
+						<div id="div2" style="width:80px;height:80px;background-color:green;"></div>
+						<br>
+						<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+					</center>
+				</section>
+
+				<section>
+					<h1>JQuery</h1>
+					<pre><code>
+<div id="div1" style="width:80px;height:80px;background-color:red;"></div>
+<br>
+<div id="div2" style="width:80px;height:80px;background-color:green;"></div>
+<br>
+<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+					</code></pre>
+					<pre><code>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeToggle();
+    $("#div2").fadeToggle("slow");
+    $("#div3").fadeToggle(3000);
+  });
+});
+					</code></pre>
+				</section>
+
+				<section data-background="#007777">
+					<h1>Chart.js</h1>
+					<canvas id="myChart" width="400" height="400"></canvas>
+				</section>
+
+				<section>
+					<h1>Chart.js</h1>
+					<pre><code>
+var data = {
+	labels : ["January","February","March","April","May","June","July"],
+	datasets : 
+		[{
+			fillColor : "rgba(220,220,220,0.5)",
+			strokeColor : "rgba(220,220,220,1)",
+			pointColor : "rgba(220,220,220,1)",
+			pointStrokeColor : "#fff",
+			data : [65,59,90,81,56,55,40]
+		}]
+};
+
+var ctx = document.getElementById("myChart").getContext("2d");
+new Chart(ctx).Line(data, {});
+					</code></pre>
+				</section>
+				<section>
+					<h1>This Presentation!</h1>
+					<h2>Reveal.JS</h2>
+					<p>This whole presentation is in HTML, CSS and Javascript</p>
+				</section>
+
+				<section>
+					<section>
+						<h1>Questions?</h1>
+						<p>I have some if you don't</p>
+					</section>
+
+					<section>
+						<h2>Am I going to learn everything I need to know in school?</h2>
+					</section>
+
+					<section>
+						<h2>Is writing code pretty much the most fun thing ever?</h2>
+					</section>
+
+					<section>
+						<h2>Is writing code going to make me rich?</h2>
+					</section>
+
+					<section>
+						<h2>Did you REALLY make a website called Wedgies.com?</h2>
+					</section>
+				</section>
+
+				<section>
+					<h1>! The End</h1>
+					<h2>The princess is in another castle</h2>
+				</section>	
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+		<script src="https://www.wedgies.com/js/libs/chart.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<script>
+
+			//jquery
+			$(document).ready(function(){
+			  $("button").click(function(){
+			    $("#div1").fadeToggle();
+			    $("#div2").fadeToggle("slow");
+			    $("#div3").fadeToggle(3000);
+			  });
+			});
+
+			//chartjs
+			var data = {
+				labels : ["January","February","March","April","May","June","July"],
+				datasets : [
+					{
+						fillColor : "rgba(220,220,220,0.5)",
+						strokeColor : "rgba(220,220,220,1)",
+						pointColor : "rgba(220,220,220,1)",
+						pointStrokeColor : "#fff",
+						data : [65,59,90,81,56,55,40]
+					},
+				]
+			};
+
+			var ctx = document.getElementById("myChart").getContext("2d");
+			new Chart(ctx).Line(data, {});
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				 parallaxBackgroundImage: 'img/mario_1.png',
+				 parallaxBackgroundSize: '3584px 720px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
