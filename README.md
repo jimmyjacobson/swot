@@ -1,4 +1,7 @@
 # Software Developer Career Day Presentation
+
+![Career Day Presentation](img/sample.png)
+
 This is a presentation I did for 8th graders in a computer science class at a
 Las Vegas public middle school in 2013.  I'm sharing it here as an example of 
 how easy it is to talk to kids about programming.  I was able to catch up with 
